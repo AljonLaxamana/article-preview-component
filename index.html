@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
     <script src="/script.js" defer></script>
@@ -20,6 +26,10 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
         font-size: 11px;
         text-align: center;
       }
@@ -44,15 +54,17 @@
           </p>
         </div>
         <div class="preview-card-profile">
-          <img src="/images/avatar-michelle.jpg" alt="" />
-          <div>
+          <img
+            class="preview-card-profile-img"
+            src="/images/avatar-michelle.jpg"
+            alt=""
+          />
+          <div class="preview-card-profile-name-date-container">
             <p class="preview-card-profile-name">Michelle Appleton</p>
             <p class="preview-card-profile-date">28 Jun 2020</p>
           </div>
-          <button class="btn-share">
-            <img src="/images/icon-share.svg" alt="" />
-          </button>
 
+          <!-- Hidden Share Content -->
           <div class="preview-card-share-social-container">
             <p>Share</p>
             <div class="social-icons">
@@ -61,10 +73,15 @@
               <img src="/images/icon-pinterest.svg" alt="" />
             </div>
           </div>
+
+          <button class="btn-share">
+            <img src="/images/icon-share.svg" alt="" />
+          </button>
         </div>
       </article>
     </main>
 
+    <!-- Attribution -->
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

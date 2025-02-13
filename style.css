@@ -1,0 +1,166 @@
+/* CSS Resets */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Default Styles */
+
+:root {
+  --very-dark-graysish-blue: hsl(217, 19%, 35%);
+  --very-desaturated-dark-blue: hsl(214, 17%, 51%);
+  --graysish-blue: hsl(212, 23%, 80%);
+  --light-graysish-blue: hsl(210, 46%, 95%);
+}
+
+/* General Styles */
+
+body {
+  font-family: "Manrope", serif;
+  font-size: 16px;
+  background-color: var(--graysish-blue);
+  padding: 5rem 1rem;
+}
+
+.preview-card-container {
+  background-color: var(--light-graysish-blue);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.preview-card-img-container {
+  background-image: url(/images/drawers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 15rem;
+  width: 100%;
+}
+
+.preview-card-details-container {
+  padding: 3rem 2.5rem;
+}
+
+.preview-card-title {
+  font-size: 1.3em;
+  font-weight: 800;
+  color: var(--very-dark-graysish-blue);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.preview-card-description {
+  color: var(--very-desaturated-dark-blue);
+}
+
+.preview-card-profile {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: 0 auto 1.5rem;
+  font-size: 14px;
+}
+
+.preview-card-profile-img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.preview-card-profile-name-date-container {
+  margin-left: -4.5rem;
+}
+
+.preview-card-profile-name {
+  color: var(--very-dark-graysish-blue);
+  font-weight: 800;
+}
+
+.preview-card-profile-date {
+  color: var(--very-desaturated-dark-blue);
+}
+
+.btn-share {
+  background-color: var(--graysish-blue);
+  border: none;
+  border-radius: 50%;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-card-share-social-container {
+  display: none;
+}
