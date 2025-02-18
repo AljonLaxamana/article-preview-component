@@ -189,7 +189,6 @@ body {
 }
 
 .preview-card-share-social-container {
-  margin-left: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -234,6 +233,25 @@ body {
 
 .bg-change {
   background-color: var(--very-dark-graysish-blue);
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    padding: 3rem 1rem;
+  }
+
+  .preview-card-share-social-container {
+    padding: 0.5rem 0;
+  }
+
+  .preview-card-share-social-container > p {
+    font-size: 14px;
+    margin-right: -0.7rem;
+  }
+
+  .preview-card-share-social-container > a {
+    gap: 0.1rem;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -294,6 +312,7 @@ body {
 
   .preview-card-share-social-container {
     background-color: var(--very-desaturated-dark-blue);
+    margin-left: 0.8rem;
     position: relative;
     bottom: 4.5rem;
     left: 8.75rem;
